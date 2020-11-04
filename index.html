@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .wrapper{
+            display:grid;
+            grid-template-columns: 70% 30%;
+            /*
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            */
+            grid-gap: 1em;
+        }
+
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background:#ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quia repellat magnam aliquam voluptas ab ipsam deserunt eos nam similique, doloremque voluptates iste dolores! Sint doloremque dolor maxime modi omnis, corporis rem. Deserunt perspiciatis eos voluptatibus nihil ullam exercitationem vero quibusdam. Iusto hic soluta facere ipsam culpa, saepe doloremque cum quasi deleniti error repudiandae ullam in odio. Impedit quo id consequatur facere vero esse alias deserunt expedita corporis exercitationem, libero neque obcaecati incidunt nobis nulla asperiores, doloribus harum tempora? Quos.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quam quia, ex dicta, tenetur non ullam reprehenderit unde consequuntur magni eius officiis nulla? Odio dicta omnis obcaecati nisi sapiente quis.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quia repellat magnam aliquam voluptas ab ipsam deserunt eos nam similique, doloremque voluptates iste dolores! Sint doloremque dolor maxime modi omnis, corporis rem. Deserunt perspiciatis eos voluptatibus nihil ullam exercitationem vero quibusdam. Iusto hic soluta facere ipsam culpa, saepe doloremque cum quasi deleniti error repudiandae ullam in odio. Impedit quo id consequatur facere vero esse alias deserunt expedita corporis exercitationem, libero neque obcaecati incidunt nobis nulla asperiores, doloribus harum tempora? Quos.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quam quia, ex dicta, tenetur non ullam reprehenderit unde consequuntur magni eius officiis nulla? Odio dicta omnis obcaecati nisi sapiente quis.
+        </div>
+        <div>Hello</div>
+    </div>
+</body>
+</html>
